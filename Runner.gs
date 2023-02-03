@@ -12,7 +12,7 @@ function bookSlot(_a) {return calendar.bookSlot(_a);}
 
 // function that responds for a user request for page, triggered upon a GET request. takes page.html, adds the enabledDays as an array, evaluates it and returns it with some customizations.
 function doGet(e) {
-    var template = HtmlService.createTemplateFromFile("D-page");
+    var template = HtmlService.createTemplateFromFile("Page");
     if(e.parameters || e.pathInfo) {
         // var auth = doAuthentication_(e);
     }
