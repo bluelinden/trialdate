@@ -1,0 +1,115 @@
+<style>
+* {
+    font-family: 'Lexend', sans-serif;
+}
+
+.loader {
+    border: 16px solid #911;
+    border-radius: 50%;
+    border-top: 16px solid #ff3333;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s linear infinite;
+    /* Safari */
+    animation: spin 0.09s linear infinite;
+    box-shadow: 0px -3px 87px 7px rgba(255,0,0,0.35);
+    -webkit-box-shadow: 0px -3px 87px 7px rgba(255,0,0,0.35);
+    -moz-box-shadow: 0px -3px 87px 7px rgba(255,0,0,0.35);
+    }
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+  color: #eee;
+}
+
+.flatpickr-months .flatpickr-month {
+  color: #eee;
+}
+
+span.flatpickr-weekday {
+  color: #eee;
+}
+
+.flatpickr-months .flatpickr-prev-month , .flatpickr-next-month {
+  color: #eee !important;
+  fill: #eee !important;
+}
+
+.flatpickr-day.prevMonthDay, .flatpickr-day.nextMonthDay {
+  color: #eee;
+}
+
+span.flatpickr-day:hover, span.flatpickr-day.prevMonthDay:hover, span.flatpickr-day.nextMonthDay:hover {
+  background: #444;
+  color: #fff;
+}
+
+selectedslot {
+  background: #555;
+  color: #fff !important;
+}
+
+.flatpickr-calendar {
+  background: #3339;
+  color: #eee;
+  border: none;
+  backdrop-filter: blur(24px);
+}
+
+.flatpickr-day.flatpickr-disabled {
+  color: #eee4;
+}
+
+flatpickr-day.today {
+  border-color: #eee !important;
+  border-width: 4px !important;
+}
+
+span.flatpickr-day {
+  color: #eee;
+}
+
+@media only screen 
+and (max-width : 700px) {
+  .about-text-beside {
+    display: none;
+  }
+  .right-aligned-box {
+    width: 100% !important;
+  }
+}
+@media only screen 
+and (min-width : 701px) {
+}
+
+label.block.text-sm.font-medium, div#selectedDate {
+  width: 400px;
+}
+.right-aligned-box.shrink-0.flex-1.max-w-4xl.min-h-full.mx-auto.p-4 {
+    overflow-y: scroll;
+    height: 100vh;
+}
+:root {
+  color-scheme: dark;
+}
+</style>
